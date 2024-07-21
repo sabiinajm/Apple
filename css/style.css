@@ -14,6 +14,10 @@
     max-width: 1000px; 
     margin: 0 auto; 
 } 
+.container-2 { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+} 
 #logo{width: 20px;}
 #navbar-top li{
     color: #000000cc;
@@ -66,6 +70,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
     overflow-x: scroll;
+    scrollbar-width: none;
 }
 .arrow button{
     height: 100%;
@@ -310,6 +315,7 @@ hr{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
 }
 .save-card{ 
     height: 400px;
@@ -335,10 +341,30 @@ hr{
     background: url('../img/phones1.jpg') center/cover no-repeat ;
     height: 25vh;
 }
-.best-card .img3{
-    background: url('../img/accessories3.jpg') 100% -1px / contain no-repeat ;
-    height: 25vh;
+#an-iphone h1{
+    font-size:1.8rem ;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
 }
+.best-card .img3{
+    background: url('../img/accessories3.jpg') 100% -1px / contain no-repeat;
+    height: 20vh;
+    width: 100%;
+}
+.best-card .img4{
+    background: url('../img/ios17.jpg') 40% -105px/cover no-repeat ;
+    height: 70vh;
+    
+}
+#ios{
+    position: relative;
+}
+.ios-txt{
+    position: static;
+    left: 40%;
+}
+
 .accessories-card .img1{
     background: url('../img/accessories1.jpg') center/contain no-repeat;
     height: 20vh;
@@ -385,6 +411,38 @@ hr{
 .save-card h3{font-weight: 400; padding: 30px;}
 .save-card p{ padding: 20px;}
 #save h1{font-weight: 2rem;}
+#an-iphone .img1{
+    background: url('../img/switching_to_iphone.jpg') center/cover no-repeat;
+    height: 50vh;
+}
+#an-iphone .img2{
+    background: url('../img/privacy.jpg') center/cover no-repeat;
+    height: 50vh;
+}
+#tv-music .card{
+    width: 50%;
+    padding: 0;
+    height: 80vh;
+}
+.tv-img{
+    background: url('../img/tv.png') center/cover no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+.music-img{
+    background: url('../img/684x384\ \(9\).jpg') center/cover no-repeat;
+    height: 40vh;
+    width: 100%;
+}
+.music-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.music-header i{
+    font-size: 2.2rem;
+}
 @media only screen and (min-width: 768px) {
     #logo{width: 16px;}
     .hidden-d{display: none;}
@@ -412,7 +470,7 @@ hr{
     }
     .sidebar > *{flex: auto;}
     #shop p, #shop a{font-size: 1.3rem;}
-    #titanium, #newphoria{padding: 30px 0;}
+    #titanium{padding: 30px 0;}
     #titanium-h1{margin: 20px 0;}
     #titanium p, #power p{
         padding: 10px 0; 
@@ -509,5 +567,24 @@ hr{
     .save-card h3{font-weight: 600;}
     #save h1{
         font-size: 3rem;
+    }
+    
+    .best-card .img4{
+        background: url('../img/ios17.jpg') 40% -105px/cover no-repeat ;
+        height: 80vh;
+    }
+    #ios{
+        position: relative;
+    }
+    .ios-txt{
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+    #an-iphone h1, #more h1{
+        font-size: 3rem ;
+        font-weight: 600;
+        padding: 20px;
+        text-align: center;
     }
 }
