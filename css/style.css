@@ -4,9 +4,12 @@
 .bg-qara{background-color: #000;}
 .txt-ag{color: #fff;}
 .txt-qara{color: #000;}
+.txt-boz{color: #333;}
+.txt-light{font-weight: 400;}
+.txt-bold{font-weight: 600;}
 .fs-75{font-size: .75rem;}
 .hidden-mb{display: none;}
-.hidden-d{display: block;}
+.hidden-d{display: inline-block;}
 .txt-center{text-align: center;}
 
 *{font-family: Arial, Helvetica, sans-serif;}
@@ -37,7 +40,6 @@
     padding-left: 20px;
     font-size: 1.2rem;
     overflow: hidden;
-    font-weight: 400;
 }
 .closed {
     height: 50px;
@@ -84,7 +86,7 @@
     width: 150px;
 }
 .model > img{
-    width: 50px;
+    width: 40px;
     height:50px;
 }
 .new-txt{
@@ -97,18 +99,17 @@
     align-items: center;
 }
 
-#shop{text-align: center;}
+#shop-phone p{
+    padding-block: 20px 5px; 
+    display: block;
+}
 .linkto{
     color: #2997ff;
     padding: 20px 0; 
     display: block;
 }
-#shop p{
-    padding-block: 20px 5px; 
-    display: block;
-}
 
-#titanium, #newphoria{
+#titanium, #newphoria, #tour, .accessories{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,32 +118,32 @@
 #titanium h5{
     color: #8B887EFF;
     font-size: 1.2rem;
-    font-weight: 400;
 }
-#titanium-h1{
+#titanium-header{
     background: url('../img/headline_titanium.jpg') center/contain no-repeat;
-    height:40px;
+    height:50px;
     width: 100%;
     margin: 10px 0;
-}
-#titanium p, #power p{
-    padding: 20px 0;
-    text-align: center;
 }
 #titanium-img{
     background: url('../img/titanium.jpg') center/contain no-repeat;
     height: 50vh;
     width: 50vw;
 }
-
-#newphoria h2{
+.card h2{
     font-size: 2rem;
-    font-weight: 400;
     padding: 20px 0;
 }
-#newphoria h5{
+.card h5{
     font-size: 1.6rem;
-    font-weight: 400;
+}
+.card h6{
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+.card p{
+    padding: 20px 0;
+    text-align: center;
 }
 .buy-btn{
     background-color: #0071e3;
@@ -151,12 +152,13 @@
     border-radius: 20px;
     margin: 10px 0;
 }
+
+#newphoria{padding-top: 20px;}
 #newphoria-img{
     background: url('../img/newphoria.jpg') center/cover no-repeat;
     height: 20vh;
     width: 100%;
 }
-
 .row{
     display: flex;
     flex-direction: column;
@@ -164,11 +166,7 @@
     align-items: center;
     text-align: center;
 }
-#power h5,#tour-top h5{
-    font-size: 1.2rem;
-    padding: 20px 0;
-}
-#power h1{
+.power-top h1{
     font-size: 2rem;
     color: #29318f;
 }
@@ -179,50 +177,42 @@
 }
 .power-top{width: 50vw;}
 
-#tour{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#tour-top{height: 40vh;}
+#tour .card h1{
+    width: 60%;
+    text-align: center;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.8rem;
 }
-#tour-top{
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#tour-top h1{font-size: 2rem;}
 #tour-bottom{
     background: url('../img/tour.jpg') center/cover;
     height: 50vh;
     width: 100%;
 }
-#which{
-    text-align: center;
-}
+
 #which h1{
     font-size: 2rem ;
     font-weight: 400;
     margin: 50px 0;
+    padding: 20px 0;
 }
 #iphone-models{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex: 1 1 auto;
+    gap: 10px;
 }
 .iphone{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 .iphone-img{
-    height: 220px;
-    width: 160px;
+    height: 170px;
+    width: 120px;
 }
 .colors1{
     height: 20px;
@@ -239,7 +229,13 @@
     width: 80px;
     margin: 20px 0;
 }
-
+.iphone p{
+    line-height: 1.6;
+}
+.iphone p,
+.iphone h4{
+    padding: 10px 0;
+}
 .info2 .img{
     background: url('../img/icon1.png') center/contain no-repeat;
     height: 41px;
@@ -284,7 +280,7 @@
 }
 hr{
     height: 1px;
-    width: 100%; 
+    width: 90%; 
     background-color: #d6d6d6;
     margin-bottom: 20px;
 }
@@ -299,16 +295,19 @@ hr{
 .save-card .img-1{
     background: url('../img/save1.jpg') center/contain no-repeat;
     height: 30vh;
+    width: 100%;
 }
 .save-card .img-2{
     background: url('../img/save2.jpg') center/contain no-repeat;
     height: 20vh;
+    width: 100%;
 }
 .save-card .img-3{
     background: url('../img/save3.jpg') center/contain no-repeat;
     height: 30vh;
+    width: 100%;
 }
-.card{
+.card, .card-2{
     margin: 10px;
     padding: 0 20px;
     display: flex;
@@ -317,89 +316,71 @@ hr{
     text-align: center;
     align-items: center;
 }
-.save-card{ 
-    height: 400px;
-    flex: 1 1 auto;
-}
 .cards{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 #save h1{
     padding: 30px 5px;
-    font-weight: 400;
-    text-align: center;
 }
 #save h3{font-size: 1.5rem;}
+.save-card h3{font-weight: 400; padding: 30px;}
+.save-card p{ padding: 20px;}
+#save h1{font-weight: 2rem;}
+
 .best-card h2{
     padding: 30px 5px;
-    font-weight: 600;
     font-size: 2rem;
     text-align: center;
 }
-.best-img{
-    background: url('../img/phones1.jpg') center/cover no-repeat ;
-    height: 25vh;
-}
-#an-iphone h1{
-    font-size:1.8rem ;
-    font-weight: 400;
-    padding: 20px;
-    text-align: center;
-}
-.best-card .img3{
-    background: url('../img/accessories3.jpg') 100% -1px / contain no-repeat;
-    height: 20vh;
-    width: 100%;
-}
-.best-card .img4{
-    background: url('../img/ios17.jpg') 40% -105px/cover no-repeat ;
-    height: 70vh;
-    
-}
-#ios{
+#best{
     position: relative;
 }
-.ios-txt{
-    position: static;
-    left: 40%;
+
+.best-img{
+    background: url('../img/phones1.jpg') center/ cover no-repeat;
+    height: 25vh;
+    width: 100%;
 }
 
-.accessories-card .img1{
+.accessories-card .accessories1{
     background: url('../img/accessories1.jpg') center/contain no-repeat;
     height: 20vh;
-    width: 50%;
+    width: 40%;
 }
-.accessories-card .img2{
+.accessories-card .accessories2{
     background: url('../img/accessories2.jpg') center/cover no-repeat;
     height: 30vh;
     width: 100%;
 }
 .section-header{
-    padding: 20px;
-    font-size: 1.2rem;
+    padding: 30px 0;
+    width: 50%;
+    font-size: 1.8rem;
     margin: auto;
-    text-align: center;
 }
 .accessories{
     min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     margin: 20px;
     padding: 20px;
 }
-.accessories p{
-    padding: 20px;
+.accessories h2{font-size: 2rem;}
+.accessories p{padding: 20px; width: 70%; margin: auto;}
+.links{display: flex; justify-content: center; gap: 10px;}
+.airpod {
+    background: url('../img/accessories3.jpg') 100% -1px/contain no-repeat ;
+    height: 20vh;
+    width: 100%;
 }
+
 .box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    flex: 1 ;
 }
 .box p{
     line-height: 1.5;
@@ -408,16 +389,64 @@ hr{
     font-size: 1.3rem;
     padding: 10px;
 }
-.save-card h3{font-weight: 400; padding: 30px;}
-.save-card p{ padding: 20px;}
-#save h1{font-weight: 2rem;}
-#an-iphone .img1{
+
+.ios-img {
+    background: url('../img/ios17.jpg') 40% -105px / cover no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+#an-iphone .card-2{
+    padding: 0;
+}
+#an-iphone h1{
+    font-size:1.8rem ;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+}
+.row-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    text-align: center;
+}
+.switching-img{
     background: url('../img/switching_to_iphone.jpg') center/cover no-repeat;
     height: 50vh;
+    width: 100%;
 }
-#an-iphone .img2{
+.privacy-img{
     background: url('../img/privacy.jpg') center/cover no-repeat;
     height: 50vh;
+    width: 100%;
+}
+#swiching{flex: 1;}
+
+.one-logo{
+    background: url('../img/apple_one__cq8ojsqxitea_large.jpg') center/ contain no-repeat;
+    height: 40px;
+}
+.more-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 60vh;
+}
+#more h1{
+    padding: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+#more p{
+    padding: 20px;
+}
+.bundle{
+    background: url('../img/bundle__dlqe12erfzsm_large.jpg') center/ contain no-repeat;
+    width: 90%;
+    height: 40vh;
 }
 #tv-music .card{
     width: 50%;
@@ -469,27 +498,31 @@ hr{
         font-weight: 600;
     }
     .sidebar > *{flex: auto;}
-    #shop p, #shop a{font-size: 1.3rem;}
+    #shop-phone p, #shop-phone a{font-size: 1.3rem;}
     #titanium{padding: 30px 0;}
-    #titanium-h1{margin: 20px 0;}
-    #titanium p, #power p{
+    #titanium-header{margin: 20px 0;}
+    #titanium-img{
+        transform: rotate(-90deg) scale(1.5);
+        height: 50vh;
+    }
+    #newphoria-img{height: 55vh;}
+    .card p{
         padding: 10px 0; 
         text-align: center; 
         font-size: 1.3rem;
     }
-    #titanium-img{
-        transform: rotate(-90deg) scale(1.5) ;
-        height: 50vh;
+    #tour .card h1{
+        text-align: left;
+        padding: 5px 0;
+        font-size: 2.5rem;
     }
-    #newphoria-img{height: 55vh;}
-    #newphoria h2{
+    .card h2{
         font-size: 3rem; 
         font-weight: 600;
     }
-    .row{
-        flex-direction: row;
-    }
-    #power h1{
+    .row{flex-direction: row;}
+    .row-2{flex-direction: row;}
+    .power-top h1{
         font-size: 2.8rem;
         line-height: 1.2;
     }
@@ -509,43 +542,36 @@ hr{
     #tour-top .linkto{
         background-color: #fff; 
         border-radius: 30px;  
-        padding: 10px 5px; 
+        padding: 10px 10px; 
         color: #000; 
         margin: 10px 0; 
     }
     #tour-bottom{
         height: 97vh;
-        width: 96vw;
+        width: 94vw;
         margin: 40px 0;
         border-radius: 30px;
     }
+    #which h1{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .iphone-img{
+        height: 220px;
+        width: 160px;
+    }
     .iphone{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
         width: 20%;
     }
     .save-card{ 
-        height: 400px;
-        width: 350px;
+        height: 500px;
+        width: 330px;
+        flex-grow: 1;
     }
+
     .section-header{
         padding: 30px;
-        width: 50%;
-        font-size: 2rem;}
-    .best-txt{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-    }
-    .best-img{
-        background-position: top;
-        height: 220px;
-    }
+        font-size: 3rem;}
     .accessories{
         flex-direction: row;
         height: 80vh;
@@ -553,38 +579,46 @@ hr{
     .card-reverse{
         flex-direction: row-reverse;
     }
-    .accessories-card .img1{
+    .accessories-card .accessories1{
         height: 70vh;
     }
-    .accessories-card .img2{
+    .accessories-card .accessories2{
         height: 80vh;
         width: 50%;
     }
-    .best-card .img3 {
+    .airpod-card  .airpod {
         height: 60vh;
         background-position: center;
+    }
+    #ios{position: relative;}
+    .ios-txt{
+        position: absolute;
+        top: 0;
+        left: 40%;
     }
     .save-card h3{font-weight: 600;}
     #save h1{
         font-size: 3rem;
     }
     
-    .best-card .img4{
-        background: url('../img/ios17.jpg') 40% -105px/cover no-repeat ;
+    #best{
         height: 80vh;
     }
-    #ios{
-        position: relative;
+    .best-img{
+        background-position: 50% 200px;
+        height: 80vh;
     }
-    .ios-txt{
+    .best-txt{
+        width: 50%;
         position: absolute;
-        left: 40%;
-        top: 20%;
+        inset: 0;
+        z-index: 1;
+        margin: auto;
     }
     #an-iphone h1, #more h1{
-        font-size: 3rem ;
+        font-size: 2.8rem ;
         font-weight: 600;
-        padding: 20px;
+        padding: 30px;
         text-align: center;
     }
 }
