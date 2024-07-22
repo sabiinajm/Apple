@@ -561,7 +561,7 @@ input {display: none;}
     padding: 0 10px;
 }
 
-input:checked ~ .accardion-body:first-of-type {
+input:checked ~ .accardion-body {
     max-height: 500px;
     padding: 10px;
 }
