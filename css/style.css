@@ -300,7 +300,7 @@ hr{
 }
 .save-card .img-1{
     background: url('../img/save1.jpg') center/contain no-repeat;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
 }
 .save-card .img-2{
@@ -310,7 +310,7 @@ hr{
 }
 .save-card .img-3{
     background: url('../img/save3.jpg') center/contain no-repeat;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
 }
 .card, .card-2{
