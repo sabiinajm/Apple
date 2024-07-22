@@ -1,5 +1,6 @@
 .bg-1{background-color: #f2f2f2;}
 .bg-2{background-color: #fbfbfd;}
+.bg-3{background-color: #f9f9f9;}
 .bg-ag{background-color: #fff;}
 .bg-qara{background-color: #000;}
 .txt-ag{color: #fff;}
@@ -72,7 +73,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: column;
     overflow-x: scroll;
+    -ms-overflow-style: none;
     scrollbar-width: none;
+}
+#models::-webkit-scrollbar{
+    display: none;
 }
 .arrow button{
     height: 100%;
@@ -154,6 +159,7 @@
 }
 
 #newphoria{padding-top: 20px;}
+#newphoria .card{padding:0; margin: 0;}
 #newphoria-img{
     background: url('../img/newphoria.jpg') center/cover no-repeat;
     height: 20vh;
@@ -316,6 +322,13 @@ hr{
     text-align: center;
     align-items: center;
 }
+.card-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
 .cards{
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -356,7 +369,7 @@ hr{
 }
 .section-header{
     padding: 30px 0;
-    width: 50%;
+    width: 100%;
     font-size: 1.8rem;
     margin: auto;
 }
@@ -367,7 +380,7 @@ hr{
 }
 .accessories h2{font-size: 2rem;}
 .accessories p{padding: 20px; width: 70%; margin: auto;}
-.links{display: flex; justify-content: center; gap: 10px;}
+.links{display: flex; justify-content: center; gap: 10px; z-index: 2;}
 .airpod {
     background: url('../img/accessories3.jpg') 100% -1px/contain no-repeat ;
     height: 20vh;
@@ -422,6 +435,7 @@ hr{
     width: 100%;
 }
 #swiching{flex: 1;}
+#privacy{flex: 1;}
 
 .one-logo{
     background: url('../img/apple_one__cq8ojsqxitea_large.jpg') center/ contain no-repeat;
@@ -429,18 +443,17 @@ hr{
 }
 .more-card{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
     height: 60vh;
 }
-#more h1{
+#more h1, #research h1{
     padding: 30px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
-#more p{
+#more p, #research p{
     padding: 20px;
 }
 .bundle{
@@ -448,29 +461,122 @@ hr{
     width: 90%;
     height: 40vh;
 }
-#tv-music .card{
-    width: 50%;
+#tv-music .card-2{
+    width: auto;
     padding: 0;
-    height: 80vh;
+    height: 70vh;
+    justify-content: flex-start;
+    margin-block: 20px;
+    position: relative;
+    gap: 20px;
 }
+#tv-music p{z-index: 2;}
+#tv-music img{margin: 20px;}
 .tv-img{
     background: url('../img/tv.png') center/cover no-repeat;
     height: 50vh;
+    position: absolute;
+    bottom: 0;
     width: 100%;
+}
+.fitness-img{
+    background: url('../img/update_promo_apple_fitness_iphone__762tbwjyo5ee_small.jpg') center/cover no-repeat;
+    height: 50vh;
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+}
+.news-img{
+    background: url('../img/apple_news_plus_tile_update_x__crr8y9ssslqq_small.jpg') center/cover no-repeat;
+    height: 50vh;
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
 }
 .music-img{
     background: url('../img/684x384\ \(9\).jpg') center/cover no-repeat;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
 }
-.music-header{
+.arcade-img{
+    background: url('../img/Screenshot\ 2024-03-04\ 184214.png') top/ cover no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+.gift-img{
+    background: url('../img/giftcard_tile__dartrujkircm_small_2x.jpg') top/ cover no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+#music-header{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    margin: 20px;
 }
-.music-header i{
-    font-size: 2.2rem;
+#music-header i{
+    font-size: 2.5rem;
+}
+.research-img{
+    background: url('../img/apple-research__czkoifogwkeq_small.jpg') center/ contain no-repeat;
+    width: 90%;
+    height: 40vh;
+}
+footer{
+    padding: 20px;
+}
+#footer-top p, ul li, li{
+    line-height: 1.8;
+    font-size: .8rem;
+    color: #8d8d8d;
+    text-align: justify;
+}
+#footer-top li{
+    margin-left: 20px;
+}
+footer hr{
+    width: 100%;
+    margin: 20px auto;
+}
+.footer-logo{display: flex; gap: 25px; align-items: center; margin: 20px 0;}
+.footer-logo .fa-apple{font-size: 1.5rem;}
+
+input {display: none;}
+
+#footer-accardion label {
+    display: block;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    margin: 5px 0;
+    color: #333;
+}
+.accardion-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s;
+    border-top: none;
+    padding: 0 10px;
+}
+
+input:checked ~ .accardion-body {
+    max-height: 500px;
+    padding: 10px;
+}
+#footer-bottom{
+    color: #8d8d8d;
+    font-size: .8rem;
+}
+#end{
+    display: flex;
+    justify-content: space-between;
+}
+footer p , li{overflow-wrap: break-word}
+span{
+    color: #0071e3;
+    text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
     #logo{width: 16px;}
@@ -502,7 +608,7 @@ hr{
     #titanium{padding: 30px 0;}
     #titanium-header{margin: 20px 0;}
     #titanium-img{
-        transform: rotate(-90deg) scale(1.5);
+        transform: rotate(-90deg) scale(1.3);
         height: 50vh;
     }
     #newphoria-img{height: 55vh;}
@@ -571,7 +677,9 @@ hr{
 
     .section-header{
         padding: 30px;
-        font-size: 3rem;}
+        font-size: 3rem;
+        width: 50%;
+    }
     .accessories{
         flex-direction: row;
         height: 80vh;
@@ -615,10 +723,46 @@ hr{
         z-index: 1;
         margin: auto;
     }
-    #an-iphone h1, #more h1{
+    #an-iphone h1, #more h1, #research h1{
         font-size: 2.8rem ;
         font-weight: 600;
         padding: 30px;
         text-align: center;
+    }
+    #tv-music .card-2{
+        width: 50%;
+    }
+    #research{
+        padding-bottom: 20px;
+    }
+    #research .more-reverse{
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .research-img{
+        background: url('../img/apple-research__czkoifogwkeq_large.jpg') center/ contain no-repeat;
+        width: 40%;
+        height: 40vh;
+    }
+    .text-part{
+        width: 40%;
+    }
+    .accardion-body{
+        display: inline;
+    }
+    label{
+        border: none;
+        padding: 10px 0;
+    }
+    #footer-accardion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0 10px;
+    }
+    #footer-accardion li{
+        padding: 0;
     }
 }
