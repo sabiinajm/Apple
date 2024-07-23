@@ -496,7 +496,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 20px;
 }
 #music-header i{font-size: 2.5rem;}
@@ -707,6 +707,7 @@ span{
         padding: 30px;
     }
     #tv-music .card-2{width: 50%;}
+    #music-header{font-size: 2rem;}
     #research{padding-bottom: 20px;}
     #research .more-reverse{
         height: 60vh;
