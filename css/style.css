@@ -333,7 +333,7 @@ hr{
 }
 #save h3{font-size: 1.3rem;}
 .save-card h3{font-weight: 400; padding: 30px;}
-.save-card p{ padding: 20px;}
+.save-card p,.best-txt > p{ padding: 20px;}
 #save h1{font-size: 1.6rem;}
 
 .best-card h2{
@@ -449,7 +449,7 @@ hr{
 #tv-music .card-2{
     width: auto;
     padding: 0;
-    height: 70vh;
+    height: 80vh;
     justify-content: flex-start;
     margin-block: 20px;
     position: relative;
@@ -545,14 +545,16 @@ input:checked ~ .accardion-body {
     max-height: 500px;
     padding: 10px;
 }
-#footer-bottom{
+#footer-bottom > *{
     color: #8d8d8d;
     font-size: .8rem;
+    line-height: 1.5rem;
 }
 #end{
     display: flex;
     justify-content: space-between;
 }
+#end p{padding: 5px 0;}
 footer p , li{overflow-wrap: break-word}
 span{
     color: #0071e3;
@@ -728,4 +730,5 @@ span{
         gap: 0 10px;
     }
     #footer-accardion li{padding: 0;}
+    #footer-accardion li:hover{text-decoration: underline;}
 }
