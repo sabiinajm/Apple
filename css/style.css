@@ -235,13 +235,8 @@
     width: 80px;
     margin: 20px 0;
 }
-.iphone p{
-    line-height: 1.6;
-}
-.iphone p,
-.iphone h4{
-    padding: 10px 0;
-}
+.iphone p{line-height: 1.6;}
+.iphone p, .iphone h4{ padding: 10px 0;}
 .info2 .img{
     background: url('../img/icon1.png') center/contain no-repeat;
     height: 41px;
@@ -315,7 +310,6 @@ hr{
 }
 .card, .card-2{
     margin: 10px;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -337,19 +331,17 @@ hr{
 #save h1{
     padding: 30px 5px;
 }
-#save h3{font-size: 1.5rem;}
+#save h3{font-size: 1.3rem;}
 .save-card h3{font-weight: 400; padding: 30px;}
 .save-card p{ padding: 20px;}
-#save h1{font-weight: 2rem;}
+#save h1{font-size: 1.6rem;}
 
 .best-card h2{
     padding: 30px 5px;
     font-size: 2rem;
     text-align: center;
 }
-#best{
-    position: relative;
-}
+#best{position: relative;}
 
 .best-img{
     background: url('../img/phones1.jpg') center/ cover no-repeat;
@@ -370,7 +362,7 @@ hr{
 .section-header{
     padding: 30px 0;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: auto;
 }
 .accessories{
@@ -395,9 +387,7 @@ hr{
     padding: 20px;
     flex: 1 ;
 }
-.box p{
-    line-height: 1.5;
-}
+.box p{line-height: 1.5;}
 .box h5{
     font-size: 1.3rem;
     padding: 10px;
@@ -408,9 +398,7 @@ hr{
     height: 80vh;
     width: 100%;
 }
-#an-iphone .card-2{
-    padding: 0;
-}
+#an-iphone .card-2{padding: 0;}
 #an-iphone h1{
     font-size:1.8rem ;
     font-weight: 400;
@@ -449,13 +437,10 @@ hr{
     height: 60vh;
 }
 #more h1, #research h1{
-    padding: 30px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
-#more p, #research p{
-    padding: 20px;
-}
+#more p, #research p{padding: 20px;}
 .bundle{
     background: url('../img/bundle__dlqe12erfzsm_large.jpg') center/ contain no-repeat;
     width: 90%;
@@ -515,26 +500,21 @@ hr{
     font-size: 2rem;
     margin: 20px;
 }
-#music-header i{
-    font-size: 2.5rem;
-}
+#music-header i{font-size: 2.5rem;}
 .research-img{
     background: url('../img/apple-research__czkoifogwkeq_small.jpg') center/ contain no-repeat;
-    width: 90%;
+    width: 100%;
     height: 40vh;
 }
-footer{
-    padding: 20px;
-}
+.text-part{padding-top: 20px;}
+footer{padding: 20px;}
 #footer-top p, ul li, li{
     line-height: 1.8;
     font-size: .8rem;
     color: #8d8d8d;
     text-align: justify;
 }
-#footer-top li{
-    margin-left: 20px;
-}
+#footer-top li{margin-left: 20px;}
 footer hr{
     width: 100%;
     margin: 20px auto;
@@ -578,6 +558,7 @@ span{
     color: #0071e3;
     text-decoration: underline;
 }
+
 @media only screen and (min-width: 768px) {
     #logo{width: 16px;}
     .hidden-d{display: none;}
@@ -668,9 +649,7 @@ span{
         height: 220px;
         width: 160px;
     }
-    .iphone{
-        width: 20%;
-    }
+    .iphone{width: 20%;}
     .save-card{ 
         height: 500px;
         width: 330px;
@@ -686,12 +665,8 @@ span{
         flex-direction: row;
         height: 80vh;
     }
-    .card-reverse{
-        flex-direction: row-reverse;
-    }
-    .accessories-card .accessories1{
-        height: 70vh;
-    }
+    .card-reverse{flex-direction: row-reverse;}
+    .accessories-card .accessories1{height: 70vh;}
     .accessories-card .accessories2{
         height: 80vh;
         width: 50%;
@@ -707,13 +682,10 @@ span{
         left: 40%;
     }
     .save-card h3{font-weight: 600;}
-    #save h1{
-        font-size: 3rem;
-    }
+    #save h1{font-size: 3rem;}
+    #save h3{font-size: 1.6rem;}
     
-    #best{
-        height: 80vh;
-    }
+    #best{height: 80vh;}
     .best-img{
         background-position: 50% 200px;
         height: 80vh;
@@ -729,14 +701,9 @@ span{
         font-size: 2.8rem ;
         font-weight: 600;
         padding: 30px;
-        text-align: center;
     }
-    #tv-music .card-2{
-        width: 50%;
-    }
-    #research{
-        padding-bottom: 20px;
-    }
+    #tv-music .card-2{width: 50%;}
+    #research{padding-bottom: 20px;}
     #research .more-reverse{
         height: 60vh;
         display: flex;
@@ -748,12 +715,8 @@ span{
         width: 40%;
         height: 40vh;
     }
-    .text-part{
-        width: 40%;
-    }
-    .accardion-body{
-        display: inline;
-    }
+    .text-part{width: 40%;}
+    .accardion-body{display: inline;}
     label{
         border: none;
         padding: 10px 0;
@@ -764,7 +727,5 @@ span{
         justify-content: space-between;
         gap: 0 10px;
     }
-    #footer-accardion li{
-        padding: 0;
-    }
+    #footer-accardion li{padding: 0;}
 }
