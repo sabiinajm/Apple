@@ -7,7 +7,6 @@
 .txt-qara{color: #000;}
 .txt-boz{color: #333;}
 .txt-light{font-weight: 400;}
-.txt-bold{font-weight: 600;}
 .fs-75{font-size: .75rem;}
 .hidden-mb{display: none;}
 .hidden-d{display: inline-block;}
@@ -341,7 +340,7 @@ hr{
     font-size: 2rem;
     text-align: center;
 }
-#best{position: relative;}
+#best, #ios, #tour {position: relative;}
 
 .best-img{
     background: url('../img/phones1.jpg') center/ cover no-repeat;
@@ -519,7 +518,12 @@ footer hr{
     width: 100%;
     margin: 20px auto;
 }
-.footer-logo{display: flex; gap: 25px; align-items: center; margin: 20px 0;}
+.footer-logo{
+    display: flex; 
+    gap: 25px; 
+    align-items: center;
+    margin: 20px 0;
+}
 .footer-logo .fa-apple{font-size: 1.5rem;}
 
 input {display: none;}
@@ -621,7 +625,6 @@ span{
         background: url('../img/power.png') center/contain no-repeat;
         height: 100vh;
     }
-    #tour{position: relative;}
     #tour-top{
         position: absolute;
         top: 30%; 
@@ -677,7 +680,6 @@ span{
         height: 60vh;
         background-position: center;
     }
-    #ios{position: relative;}
     .ios-txt{
         position: absolute;
         top: 0;
